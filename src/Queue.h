@@ -11,7 +11,7 @@ public:
 	Queue(int val1, int val2, int val3);
 	int getSize();
 	int* getArrayPointer();
-	int getHighestValue()
+	int getHighestValue();
 	void sort();
 	void flip();
 	void insert(int value);
