@@ -25,6 +25,17 @@ int Queue::getSize()
   return sizeof(_queue)/sizeof(_queue[0]);
 }
 
+//Gets the highest value in the queue array
+int Queue::getHighestValue()
+{
+	highestVal = -1;
+	for (int i = 1; i<getSize(); i++)
+	{
+		highestVal = _queue[i]>highestVal ? _queue[i] : highestVal;
+	}
+	return highestVal;
+}
+
 //Sorts the _queue array with the insertion sort algorithm
 void Queue::sort()
 {
@@ -42,6 +53,7 @@ void Queue::sort()
     _queue[j+1] = key;
   }
 }
+
 //Swaps two and two elements in the queue at the time. Loops through half of the array and swaps with the the elements in the other half iteratively
 void Queue::flip()
 {

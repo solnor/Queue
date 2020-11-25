@@ -8,13 +8,14 @@ private:
   bool _checkForDuplicates(int value);
 public:
 	Queue();
-  Queue(int val1, int val2, int val3);
-  int* getArrayPointer();
-  int getSize();
-  void sort();
-  void flip();
-  void insert(int value);
-  void remove(int value);
+	Queue(int val1, int val2, int val3);
+	int getSize();
+	int* getArrayPointer();
+	int getHighestValue()
+	void sort();
+	void flip();
+	void insert(int value);
+	void remove(int value);
 };
 
 #endif
