@@ -4,11 +4,11 @@
 class Queue
 {
 private:
-  int _queue[3];
+  int _queue[4];
   bool _checkForDuplicates(int value);
 public:
 	Queue();
-	Queue(int val1, int val2, int val3);
+	Queue(int val1, int val2, int val3, int val4);
 	int getSize();
 	int* getArrayPointer();
 	int getHighestValue();

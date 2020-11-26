@@ -3,12 +3,12 @@
 
 //Constructor. Initializes _queue with default values.
 Queue::Queue()
-  :_queue{-1,-1,-1}
+  :_queue{-1,-1,-1, -1}
 {
 }
 //Constructor which initializes _queue with user-specified values.
-Queue::Queue(int val1, int val2, int val3)
-  :_queue{val1,val2,val3}
+Queue::Queue(int val1, int val2, int val3, int val4)
+  :_queue{val1,val2,val3,val4}
 {
 }
 
