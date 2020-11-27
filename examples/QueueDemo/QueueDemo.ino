@@ -1,5 +1,5 @@
 #include "Queue.h"
-Queue upwardsQueue(9,4,6);
+Queue upwardsQueue(9,4,6,5);
 Queue downwardsQueue;
 int *queuePointer = 0;
 int queueSize = 0;

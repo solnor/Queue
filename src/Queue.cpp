@@ -29,8 +29,9 @@ int Queue::getSize()
 int Queue::getHighestValue()
 {
 	int highestVal = -1;
-	for (int i = 1; i<getSize(); i++)
+	for (int i = 0; i<getSize(); i++)
 	{
+		
 		highestVal = _queue[i]>highestVal ? _queue[i] : highestVal;
 	}
 	return highestVal;
