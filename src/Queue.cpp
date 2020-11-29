@@ -3,12 +3,14 @@
 
 //Constructor. Initializes _queue with default values.
 Queue::Queue()
-  :_queue{-1,-1,-1, -1}
+  :_queue{-1,-1,-1, -1},
+  _highestFloor(sizeof(_queue)/sizeof(_queue[0]))
 {
 }
 //Constructor which initializes _queue with user-specified values.
 Queue::Queue(int val1, int val2, int val3, int val4)
-  :_queue{val1,val2,val3,val4}
+  :_queue{val1,val2,val3,val4},
+  _highestFloor(sizeof(_queue)/sizeof(_queue[0]))
 {
 }
 
@@ -35,6 +37,17 @@ int Queue::getHighestValue()
 		highestVal = _queue[i]>highestVal ? _queue[i] : highestVal;
 	}
 	return highestVal;
+}
+
+//Gets the lowest value in the queue array
+int Queue::getLowestValue()
+{
+	int lowestVal = _highestFloor;
+	for (int i = 0; i<getSize(); i++)
+	{
+		if(_queue[i]>=0){lowestVal = _queue[i]<lowestVal ? _queue[i] : lowestVal;}
+	}
+	return lowestVal;
 }
 
 //Sorts the _queue array with the insertion sort algorithm

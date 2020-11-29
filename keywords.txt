@@ -1,6 +1,7 @@
 Queue	KEYWORD 1
 getArrayPointer	KEYWORD 2
 getHighestValue	KEYWORD 2
+getLowestValue	KEYWORD 2
 getSize	KEYWORD 2
 sort	KEYWORD 2
 flip	KEYWORD 2
